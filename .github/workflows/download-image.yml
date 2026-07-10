@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Pull and Save Image
         run: |
-          docker pull calciumion/new-api:latest
+          docker pull calciumion/new-api:latest linux/aarch64
           docker save calciumion/new-api:latest -o new-api.tar
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
